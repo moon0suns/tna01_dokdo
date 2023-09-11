@@ -1,1 +1,1 @@
-# tna01_dokdo
+# trn01_dokdo
