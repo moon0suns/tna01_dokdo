@@ -1068,7 +1068,6 @@
         padding: 50rem 0;
     }
 
-    /* 섹션에 백그라운 붙이기 */
     .section.gc {
         background: var(--gc);
     }
@@ -1076,7 +1075,6 @@
     .wrap {}
 
 
-    /* 👩🏻 */
     .header {
         position: fixed;
         top: 0;
@@ -1098,7 +1096,6 @@
         align-items: center;
         height: 120rem;
 
-        /* 높이 애니메이션 */
         transition: height .5s;
     }
 
@@ -1120,7 +1117,6 @@
         filter: invert(0);
     }
 
-    /* 메뉴 */
     .gnb {
         position: fixed;
         top: 0;
@@ -1159,10 +1155,6 @@
         color: var(--wc);
     }
 
-
-
-    /*★★★ 다단메뉴 만들기★★★ */
-
     .gnb .main_menu .sub_menu {
         position: static;
         transform: translate(0, 0);
@@ -1194,14 +1186,13 @@
 
     .header .gnb .sub_menu a {
         display: block;
-        /* 펴주기 */
         color: var(--dc);
         font-size: 15rem;
         line-height: 40rem;
+        padding: 0 0 0 20px;
     }
 
 
-    /* right */
     .login_area .member {
         display: flex;
         gap: 30px;
@@ -1233,7 +1224,6 @@
 
         width: 2px;
         height: 2px;
-        /* 모바일 가서 문제될수잇어서 px rem 섞어씀 */
         background: var(--wc);
     }
 
@@ -1244,14 +1234,12 @@
 
 
 
-    /* 👀 */
 
     .main_visual {
         position: relative;
         height: 100vh;
     }
 
-    /* 한쪽에만 감기 */
     .main_slide {
         border-radius: 0 0 30rem 30rem;
         overflow: hidden;
@@ -1296,7 +1284,6 @@
         transform: translate(-100rem, 0);
         opacity: 0;
         transition: .5s .5s;
-        /* transition: .5s .5s; 두번째는 딜레이 */
     }
 
     .main_slide .itm.on p {
@@ -1316,10 +1303,6 @@
         transform: translate(0, 0);
     }
 
-    /* .swiper-wrapper {
-    transition-timing-function: cubic-bezier(0.17, 0.46, 1, 0.39);
-} */
-
 
     .main_slide .itm01 .slide-image {
         height: 100vh;
@@ -1332,7 +1315,6 @@
     }
 
 
-    /* 화살표 */
 
     .main_visual .arrows {
         position: absolute;
@@ -1380,13 +1362,11 @@
     }
 
 
-    /* 애니메이션 */
 
     .main_visual .btn_cicle {
         position: absolute;
         bottom: -100rem;
         right: -40rem;
-        /* 올려주기 */
         z-index: 999;
 
         width: 200rem;
@@ -1405,7 +1385,6 @@
         font-size: 16rem;
         border-radius: 50%;
 
-        /* 안에잇는것 가운데 박스자체를 옮길때 저스티파이.얼라인 */
         text-align: center;
         line-height: 22rem;
 
@@ -1425,7 +1404,6 @@
         margin: 0 0 20rem 0;
     }
 
-    /* 스크롤 */
     .main_visual .scroll {
         position: absolute;
         bottom: 100px;
@@ -1500,8 +1478,6 @@
 
 
 
-    /* 1️⃣ */
-
     .main_content {}
 
 
@@ -1509,28 +1485,22 @@
     .main_content .content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* 꽉채워서 한칸씩 나눠가지기 */
         gap: 30rem;
     }
 
     .main_content .content>* {
         padding: 30rem 15rem 80rem;
-        /* 박스 안쪽 공간만들기 */
     }
 
     .main_content .content .left {
         position: relative;
-        /* 💛 */
         border-radius: 10rem;
         background: var(--gc);
     }
 
-    /* 가상요소로 이미지 깔기 */
     .main_content .content .left::after {
         content: "";
         position: absolute;
-        /* 💛 */
-        /* 아래쪽으로 잡기 */
         bottom: -20rem;
         right: 0;
         width: 300rem;
@@ -1547,7 +1517,6 @@
         margin: 0 0 17rem 0;
     }
 
-    /* ✨왼오 따로 올라오는 효과 */
     .main_content .content .left {
         opacity: 0;
         transform: translate(0, 100rem);
@@ -1562,7 +1531,6 @@
 
     .main_content .content .right {
         order: -1;
-        /* 순서바꾸기 */
         opacity: 0;
         transform: translate(0, 100rem);
         transition: .8s .5s;
@@ -1589,7 +1557,6 @@
         margin: 0 0 30rem 0;
         padding: 0 0 15rem 0;
         border-bottom: 1px dashed var(--lc);
-        /* 선 도트 dashed */
     }
 
     .main_content .content .right .desc i {
@@ -1617,7 +1584,6 @@
 
     .main_content .content .list .ls2 {
         letter-spacing: 30rem;
-        /* 자간 띄우기 글자사이즈계산해서 */
     }
 
     .main_content .content .list>*::before {
@@ -1631,11 +1597,6 @@
 
 
 
-
-    /* 2️⃣ */
-    /* .main_notice {
-    padding: 0 0 100rem 0;
-} */
 
     .main_notice .content {
         opacity: 0;
@@ -1694,7 +1655,6 @@
         width: 100%;
         height: 300rem;
         object-fit: cover;
-        /* 이미지뭉게지니깐 스케일 유지하게 */
     }
 
     .main_notice .card {
@@ -1716,7 +1676,6 @@
 
 
 
-    /* 3️⃣ */
     .main_banner .content {
         position: relative;
         display: grid;
@@ -1725,7 +1684,6 @@
         background: var(--mc);
         color: var(--wc);
         margin: 0 auto -80rem auto;
-        /* 겹치게 하기 */
         z-index: 999;
 
         border-radius: 10rem;
@@ -1789,16 +1747,13 @@
     }
 
 
-    /* END */
     .footer {}
 
     .footer .top {
         position: relative;
-        /* 💛 */
         border-radius: 30rem 30rem 0 0;
         overflow: hidden;
         background: #434250 url(../images/bg_banner.jpg) no-repeat center bottom;
-        /* 색추출해서 높이 자동으로 깔기 */
         padding: 200rem 0 300rem 0;
     }
 
@@ -1809,15 +1764,14 @@
     .footer .top .content .img_box {
         width: 250rem;
         margin: 0 auto 30rem auto;
-        /* 이너안에 박스 가운데 하기 */
     }
 
 
     .footer .top .content .txt {
-        font-family: 'Noto Serif KR';
-        font-size: 30rem;
         font-weight: 500;
-        color: var(--gc);
+        font-size: 28rem;
+        line-height: 1.25;
+        width: 100%;
     }
 
     .footer .top .content .txt span {
@@ -1830,19 +1784,7 @@
     }
 
     .footer .top .content .txt span::after {
-        content: "“ 경상북도 울릉읍 독도리 1-96 ”";
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: var(--gc);
-
-        width: 0;
-        height: 40rem;
-        white-space: nowrap;
-        overflow: hidden;
-
-        border-right: 1px solid #999;
-        animation: tt 3s infinite steps(19, end);
+        display: none;
     }
 
 
@@ -1875,7 +1817,6 @@
 
     .footer .top .dots span {
         position: absolute;
-        /* 💛 */
         left: 50%;
         width: 5px;
         height: 5px;
@@ -1978,7 +1919,6 @@
 
 
 
-    /* up */
     .to_top {
         display: none;
         position: fixed;
